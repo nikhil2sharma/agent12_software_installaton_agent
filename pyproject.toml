@@ -1,0 +1,11 @@
+[project]
+name = "agent12"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "anthropic>=1.14.0",
+    "packaging>=26.3",
+    "python-dotenv>=1.2.4",
+]

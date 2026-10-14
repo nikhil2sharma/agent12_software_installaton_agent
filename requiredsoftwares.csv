@@ -1,0 +1,7 @@
+sno,name,version,url
+1,fastapi,0.110.0,https://pypi.org/project/fastapi/
+2,langchain,,
+3,react,18.2.0,
+4,terraform,1.5.0,https://github.com/hashicorp/terraform
+5,kubernetes,,https://github.com/kubernetes/kubernetes
+6,python,3.11.4,https://www.python.org/downloads/
