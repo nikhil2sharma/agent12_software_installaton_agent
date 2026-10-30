@@ -1,11 +1,39 @@
 [project]
-name = "agent12"
-version = "0.1.0"
-description = "Add your description here"
+name = "version-agent"
+version = "0.2.0"
+description = "Check software versions against the latest stable release using Claude with web search"
 readme = "README.md"
-requires-python = ">=3.13"
+license = "MIT"
+authors = [{ name = "Nikhil Sharma" }]
+requires-python = ">=3.10"
 dependencies = [
-    "anthropic>=1.14.0",
-    "packaging>=26.3",
-    "python-dotenv>=1.2.4",
+    "anthropic>=0.40",
+    "packaging>=23.0",
+    "python-dotenv>=1.0",
 ]
+
+[project.scripts]
+version-agent = "version_agent.cli:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/version_agent"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
