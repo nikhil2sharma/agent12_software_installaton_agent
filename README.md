@@ -1,6 +1,6 @@
 # version-agent
 
-[![CI](https://github.com/nikhil2sharma/agent12_software_installaton_agent/actions/workflows/ci.yml/badge.svg)](https://github.com/nikhil2sharma/agent12_software_installaton_agent/actions/workflows/ci.yml)
+[![CI](https://github.com/nikhil2sharma/version-agent/actions/workflows/ci.yml/badge.svg)](https://github.com/nikhil2sharma/version-agent/actions/workflows/ci.yml)
 
 Give it a CSV of tools and the versions you run, and it tells you which ones
 are out of date. Claude looks up each tool's latest stable release with web
@@ -49,8 +49,8 @@ The report adds two columns, `latest_version` and `status`:
 Requires Python 3.10+ and [uv](https://docs.astral.sh/uv/).
 
 ```bash
-git clone https://github.com/nikhil2sharma/agent12_software_installaton_agent.git
-cd agent12_software_installaton_agent
+git clone https://github.com/nikhil2sharma/version-agent.git
+cd version-agent
 uv sync
 cp .env.example .env    # add your ANTHROPIC_API_KEY
 ```
